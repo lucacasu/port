@@ -50,4 +50,6 @@ trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
 ```
 
 </details>
+
 ![Plot 1: Example of Visualization](https://github.com/lucacasu/port/blob/main/assets/img/plot1.png?raw=true)
+
