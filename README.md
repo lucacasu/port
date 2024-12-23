@@ -19,6 +19,7 @@ The Stockholm International Peace Research Institute (SIPRI) database is the mos
 
 ### You can add a header
 
+```r
 f <- read.csv("trade.csv", skip = 11)
 trade <- as_tibble(f)
 
@@ -45,5 +46,7 @@ trade <- trade |>
 trade$supplier <- factor(trade$supplier, ordered = FALSE)
 trade$recipient <- factor(trade$recipient, ordered = FALSE)
 trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
+
+```
 
 </details>
