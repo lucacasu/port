@@ -1,0 +1,26 @@
+f <- read.csv("trade.csv", skip = 11)
+trade <- as_tibble(f)
+
+f2 <- read.csv("country_region.csv")
+region_map <- as_tibble(f2)
+
+trade <- janitor::clean_names(trade)
+
+trade <- select(trade, order_date, supplier, recipient, numbers_delivered,
+                armament_category, description, status, sipri_estimate,
+                tiv_deal_unit, tiv_delivery_values)
+
+# Shorten column names
+trade <- trade |>
+  rename(
+    order_year = order_date,
+    arm_cat = armament_category,
+    tiv_unit = tiv_deal_unit,
+    tiv_delivery = tiv_delivery_values,
+    items = numbers_delivered
+  )
+
+# Factors
+trade$supplier <- factor(trade$supplier, ordered = FALSE)
+trade$recipient <- factor(trade$recipient, ordered = FALSE)
+trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
