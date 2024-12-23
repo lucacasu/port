@@ -51,4 +51,4 @@ trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
 
 </details>
 
-!(assets/img/plot1.png)
+!([assets/img/plot1.png](https://github.com/lucacasu/port/blob/main/assets/img/plot1.png))
