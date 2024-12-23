@@ -13,7 +13,7 @@ The Stockholm International Peace Research Institute (SIPRI) database is the mos
 
 **The key metric in the Arms Transfers database is the Total Indicator Value (TIV)**. It overcomes challenges imposed by currency and market value of assets by assigning a standardized value to military equipment based on its type, capability and estimated production cost. Thus, it is not a direct representation of financial value but instead a measure of military capability.
 
-
+<details>
 <summary>Tips for collapsed sections</summary>
 
 ### You can add a header
@@ -46,4 +46,4 @@ trade$supplier <- factor(trade$supplier, ordered = FALSE)
 trade$recipient <- factor(trade$recipient, ordered = FALSE)
 trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
 ```
-
+</details>
