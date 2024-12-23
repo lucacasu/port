@@ -50,3 +50,5 @@ trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
 ```
 
 </details>
+
+!(assets/img/plot1.png)
