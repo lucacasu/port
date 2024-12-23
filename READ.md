@@ -48,6 +48,7 @@ trade$supplier <- factor(trade$supplier, ordered = FALSE)
 trade$recipient <- factor(trade$recipient, ordered = FALSE)
 trade$arm_cat <- factor(trade$arm_cat, ordered = FALSE)
 
-```
-```
+
 </details>
+```
+```
